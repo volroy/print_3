@@ -123,7 +123,7 @@ int				cast_lc(t_flag *f, va_list *ap)
 	ws[1] = '\0';
 	if (ws[0] < 0 && ws[0] > 55295 && ws[0] < 57344 && ws[0] > 1114111)
 	{
-		f->ret = -1;
+		f->res = -1;
 		return (0);
 	}
 	f->warg = ws;
